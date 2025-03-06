@@ -35,7 +35,7 @@ if st.session_state['response']['statusCode']==200:
 
     # Create the Plotly line chart
     fig = px.line(df4, x='date', y='current_value', 
-                    title="Interactive Line Chart (Discontinuous for Missing Data)",
+                    title="Interactive Line Chart",
                     labels={'current_value': 'Value'},
                     hover_data={'date': False})
 
